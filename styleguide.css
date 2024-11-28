@@ -1,0 +1,29 @@
+:root {
+    --colors-components-carousel-dots-active: var(--fbs-color-gray-500);
+    --colors-components-carousel-dots-inactive: var(--fbs-color-gray-300);
+    --colors-surface-primary: var(--fbs-color-gray-100);
+    --fbs-color-gray-500: rgba(115, 115, 115, 1);
+    --fbs-color-gray-300: rgba(227, 227, 227, 1);
+    --fbs-color-gray-100: rgba(252, 252, 252, 1);
+  }
+  
+  /*
+  
+  To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+  
+  <body data-colors-mode="light-theme">
+      <!-- the rest of your content -->
+  </body>
+  
+  You can apply the theme on any DOM node, not just the `body`
+  
+  */
+  
+  [data-colors-mode="light-theme"] {
+    --colors-components-carousel-dots-inactive: var(--fbs-color-gray-300);
+  }
+  
+  [data-colors-mode="dark-theme"] {
+    --colors-components-carousel-dots-inactive: var(--fbs-color-gray-500);
+  }
+  
